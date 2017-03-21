@@ -4,7 +4,7 @@
   "description": "This is a weather app for checking the weather of a city.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "production" : "webpack -p"
   },
   "author": "",
   "license": "ISC",

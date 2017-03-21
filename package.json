@@ -4,7 +4,8 @@
   "description": "This is a weather app for checking the weather of a city.",
   "main": "index.js",
   "scripts": {
-    "production" : "webpack -p"
+    "production" : "webpack -p",
+    "start" : "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

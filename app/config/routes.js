@@ -10,8 +10,11 @@
         ReactRouter   = require('react-router');
 
 
+
     var Router = ReactRouter.Router;
     var Route  = ReactRouter.Route;
+
+    var HashHistory = ReactRouter.hashHistory;
 
     var IndexRoute = ReactRouter.IndexRoute;
 
@@ -23,10 +26,10 @@
 
     var routes = (
 
-        <Router history="">
+        <Router history={HashHistory}>
 
             <Route path="/" component={Main}>
-                <Route path='/home' component={Home} />
+                <IndexRoute path='/home' component={Home} />
             </Route>
 
         </Router>

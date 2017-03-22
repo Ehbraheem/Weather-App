@@ -9,7 +9,8 @@
     var React = require('react');
 
     var Home = React.createClass({
-        render: () => (<div>Hello From Home</div>)
+        render: function () {
+            return (<div>Hello From Home</div>) }
     });
 
     module.exports = Home;

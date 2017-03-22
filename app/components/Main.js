@@ -11,4 +11,6 @@
     var Main = React.createClass({
         render: () => ( <div> Hello from Main! {this.props.children} </div>)
     })
+
+    module.exports = Main;
 })();

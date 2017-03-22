@@ -17,15 +17,15 @@
 
 
     var componentPath = '../components';
-    var Main = require( componentPath + '/Main');
-    var Home = require( componentPath + '/Home');
+    var Main = require( '../components/Main');
+    var Home = require( '../components/Home');
 
 
     var routes = (
 
-        <Router>
+        <Router history="">
 
-            <Route path="/" component="{Main}">
+            <Route path="/" component={Main}>
                 <Route path='/home' component={Home} />
             </Route>
 

@@ -9,17 +9,14 @@
     var React      = require('react'),
         ReactDom   = require('react-dom');
 
-    var HelloWorld = React.createClass({
-        render: function () {
-            return (
-                <div>Hello ReactJs</div>
-            )
-        }
-    });
+
+    var configPath = "./config";
+
+    var routes = require( configPath + '/routes');
+
 
     ReactDom.render(
-        <HelloWorld />,
-
+       routes,
         document.getElementById('app')
     );
 

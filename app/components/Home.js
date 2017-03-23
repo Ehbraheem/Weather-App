@@ -5,13 +5,12 @@
 (function () {
 
     "use strict";
-
     var React = require('react');
 
-    var Home = React.createClass({
-        render: function () {
-            return (<div>Hello From Home</div>) }
-    });
+    var Home = function (props) {
+
+        return (<div>Hello From Home</div>)
+    };
 
     module.exports = Home;
 })();

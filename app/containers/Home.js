@@ -10,9 +10,14 @@
 
     var Home = require("../components/Home");
 
-    var HomeCtrl = React.createClass({
+    var Home = React.createClass({
         render: function() {
-            return (<Home />)
+            return (
+                <Home/>
+            )
         }
     })
+
+    module.exports = Home;
 })();
+

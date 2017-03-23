@@ -7,7 +7,7 @@
     "use strict";
 
     var styles = {
-        container: {
+        homeContainer: {
             backgroundSize: 'cover',
             backgroundImage: "url('app/images/pattern.svg')",
             display: 'flex',
@@ -17,13 +17,28 @@
             height: '100%',
             width: '100%'
         },
+        mainContainer: {
+            width: '100%',
+            height: '92%'
+        },
         header: {
             fontSize: 45,
             color: '#fff',
             fontWeight: 100,
         },
+        weatherStyles: function(value) {
+            return {
+                display: 'flex',
+                flexDirection: value.direction || 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                maxWidth: 300,
+                alignSelf: 'right'
+            }
+        },
     }
 
 
     module.exports = styles;
+
 })();

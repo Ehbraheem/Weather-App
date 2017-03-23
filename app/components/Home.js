@@ -8,12 +8,15 @@
 
     var React = require('react');
     var styles = require("../styles/styles");
+    var WeatherUIContainer = require("../containers/WeatherUIContainer");
+
 
     var Home = function (props) {
-        console.log(props);
-        return (<div
-            style={styles.container} >
+        return (
+            <div
+            style={styles.homeContainer} >
             <h1 style={styles.header}>Enter a City and State</h1>
+                <WeatherUIContainer/>
         </div>)
     };
 

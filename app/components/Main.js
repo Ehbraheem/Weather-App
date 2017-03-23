@@ -7,12 +7,14 @@
     "use strict";
 
     var React = require('react');
+    var styles = require("../styles/styles");
 
     var Main = React.createClass({
 
         render: function() {
             return (
-                <div className="main-container">
+                <div style={styles.mainContainer} >
+                    <h1 className="header">Main.js Header</h1>
                     {this.props.children}
                 </div>
             )

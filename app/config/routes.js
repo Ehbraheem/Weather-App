@@ -29,7 +29,7 @@
         <Router history={HashHistory}>
 
             <Route path="/" component={Main}>
-                <IndexRoute path='/' component={Home} />
+                <IndexRoute path='/home' component={Home} />
             </Route>
 
         </Router>

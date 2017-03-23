@@ -15,7 +15,7 @@
         return (
             <div
             style={styles.homeContainer} >
-            <h1 style={styles.header}>Enter a City and State</h1>
+            <h1 style={styles.homeHeader}>Enter a City and State</h1>
                 <WeatherUIContainer/>
         </div>)
     };

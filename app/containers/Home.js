@@ -11,6 +11,8 @@
     var Home = require("../components/Home");
 
     var HomeCtrl = React.createClass({
-        render: () => <Home />
+        render: function() {
+            return (<Home />)
+        }
     })
 })();

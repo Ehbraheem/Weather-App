@@ -31,7 +31,7 @@
 
             <Route path="/" component={Main}>
                 <IndexRoute component={Home} />
-                <Route path="forecast/:city" components={ForecastContainer} />
+                <Route path="forecast/:place" components={ForecastContainer} />
             </Route>
 
         </Router>

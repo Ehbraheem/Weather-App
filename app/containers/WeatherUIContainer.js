@@ -14,6 +14,9 @@
     var WeatherUI = require("../components/WeatherUI");
 
     var WeatherUIContainer = React.createClass({
+        contextTypes: {
+            router: React.PropTypes.object.isRequired
+        },
         getDefaultProps : function () {
             return {direction: 'column'}
         },
@@ -33,8 +36,7 @@
             })
         },
         handleSubmitPlace: function () {
-            console.log("button clicked");
-            weatherUtils.getForcast(this.state.place);
+            this.context.router.push('/forecast/' + this.state.place);
 
         },
         render: function (){

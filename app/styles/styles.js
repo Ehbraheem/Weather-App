@@ -44,6 +44,39 @@
                 alignSelf: 'right'
             }
         },
+        forcastComponent: {
+            container: {
+                display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    maxWidth: 1200,
+                    margin: '50px auto'
+            },
+            dayContainer: {
+                display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                    margin: 35
+            },
+            header: {
+                fontSize: 65,
+                    color: '#333',
+                    fontWeight: 100,
+                    textAlign: 'center'
+            },
+            subheader: {
+                fontSize: 30,
+                    color: '#333',
+                    fontWeight: 100
+            },
+            weather: {
+                height: 130
+            }
+        },
+
     }
 
 

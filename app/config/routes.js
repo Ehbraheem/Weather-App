@@ -19,9 +19,10 @@
     var IndexRoute = ReactRouter.IndexRoute;
 
 
-    var componentPath = '../components';
-    var Main = require( '../components/Main');
-    var Home = require( '../components/Home');
+    var componentPath = "../components/";
+    var Main          = require(("../components/Main"));
+    var Home          = require(("../components/Home"));
+    var ForecastContainer      = require("../containers/ForecastContainer");
 
 
     var routes = (
@@ -30,6 +31,7 @@
 
             <Route path="/" component={Main}>
                 <IndexRoute component={Home} />
+                <Route path="forecast/:city" components={ForecastContainer} />
             </Route>
 
         </Router>

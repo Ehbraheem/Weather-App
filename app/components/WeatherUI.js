@@ -31,7 +31,7 @@
         )
     };
 
-    var WeatherUI = function (props) {
+    var WeatherUI = props => {
         return (
                 <div style={styles.weatherStyles(props)}>
                     <InputField
@@ -42,7 +42,7 @@
                     </Button>
                 </div>
         )
-    }
+    };
 
     WeatherUI.propTypes = {
         direction : PropTypes.string,

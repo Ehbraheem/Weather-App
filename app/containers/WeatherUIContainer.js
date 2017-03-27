@@ -25,13 +25,15 @@
             direction: PropTypes.string
         },
 
-        handleChange : function () {
-            console.log(this.state.place)
-        },
-        handleSubmitPlace: function (e) {
+        handleChange : function (e) {
+            console.log(this.state.place);
             this.setState({
                 place: e.target.value
             })
+        },
+        handleSubmitPlace: function () {
+            console.log("button clicked");
+
         },
         render: function (){
             return (

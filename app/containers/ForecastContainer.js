@@ -18,6 +18,9 @@
                 data: {}
             }
         },
+        contextTypes: {
+            router: React.PropTypes.object.isRequired
+        },
         componentDidMount: function () {
             this.contactApi(this.props.routeParams.place)
         },
@@ -33,12 +36,22 @@
                     });
                 }.bind(this));
         },
+        handleClick: function (weather) {
+            console.log(this.props);
+            this.context.router.push({
+                pathname: this.props.location.pathname + '/detail',
+                state: {
+                    weather: weather
+                }
+            })
+        },
         render: function () {
             console.log(this.state.data);
             return (
                 <Forcast  place={this.props.routeParams.place}
                           loading={this.state.loading}
-                          data={this.state.data} />)
+                          data={this.state.data}
+                          handleClick={this.handleClick}/>)
         }
     });
 

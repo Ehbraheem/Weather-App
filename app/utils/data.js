@@ -11,7 +11,7 @@
     var axios = require('axios');
 
     var _baseURL = 'http://api.openweathermap.org/data/2.5/';
-    var _API_KEY = 'a714bdb1d5e9558aff25b93ab28d2480';
+    var _API_KEY = '1e4052afa7eddd4063d5717e7cb467b9';
 
     function makeParams (queryObject) {
         return Object.keys(queryObject)
@@ -37,19 +37,21 @@
 
         return axios.get(url)
             .then(response => {
-                    console.log(response);
+                    console.log(response.data);
                 },
                 handleError);
     }
 
     function getWeather (city) {
-        var url = makeUrl('weather', queryParam(city))
+        var param = queryParam(city);
+        var url = makeUrl('weather', param);
 
         return queryAPI(url);
     }
 
     function getForcast (city) {
-        var url = makeUrl('forcast/daily', makeParams(city));
+        var param = queryParam(city);
+        var url = makeUrl('forecast/daily', param);
 
         return queryAPI(url);
     }

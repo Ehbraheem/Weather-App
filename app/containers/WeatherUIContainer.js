@@ -9,6 +9,8 @@
     var React = require("react");
     var PropTypes = React.PropTypes;
 
+    var weatherUtils = require('../utils/data');
+
     var WeatherUI = require("../components/WeatherUI");
 
     var WeatherUIContainer = React.createClass({
@@ -26,13 +28,13 @@
         },
 
         handleChange : function (e) {
-            console.log(this.state.place);
             this.setState({
                 place: e.target.value
             })
         },
         handleSubmitPlace: function () {
             console.log("button clicked");
+            weatherUtils.getForcast(this.state.place);
 
         },
         render: function (){

@@ -14,7 +14,7 @@
         render: function () {
             console.log(this.props.location.state.weather);
             return (
-                <Detail/>
+                <Detail weather={this.props.location.state.weather} place={this.props.routeParams.place}/>
             )
         }
     })

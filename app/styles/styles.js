@@ -77,7 +77,35 @@
             }
         },
 
-    }
+        detailComponent: {
+            descriptionContainer: {
+                fontSize: 34,
+                fontWeight: 100,
+                maxWidth: 400,
+                margin: '0 auto',
+                textAlign: 'center',
+            }
+
+        },
+        dayItemComponent: {
+            dayContainer: {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                margin: 35
+            },
+            subheader: {
+                fontSize: 30,
+                color: '#333',
+                fontWeight: 100
+            },
+            weather: {
+                height: 130
+            }
+        }
+
+    };
 
 
     module.exports = styles;
